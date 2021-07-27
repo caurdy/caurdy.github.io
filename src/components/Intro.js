@@ -10,7 +10,7 @@ const Intro = () => {
           Student Software & Web Developer
         </h1>
         <nav className='nav text-uppercase h5'>
-          <a className='nav-link ml-0' href='#About'>About</a>
+          <a className='nav-link ms-0' href='#About'>About</a>
           <a className='nav-link' href='#Work'>Work</a>
           <a className='nav-link' href='#Contact'>Contact</a>
           <a className='nav-link' href={Resume} 

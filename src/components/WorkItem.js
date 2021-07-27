@@ -14,18 +14,12 @@ const WorkItem = (props) => {
       >
         { collapse &&
           <Fragment>
-            <span className='mr-2'>Read more</span>
-            <svg width='1em' height='1em' viewBox='0 0 16 16' className='bi bi-chevron-down' fill='currentColor' xmlns='http://www.w3.org/2000/svg'>
-              <path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/>
-            </svg>
+            Read more <i class="bi bi-chevron-down"></i>
           </Fragment>
         }
         { !collapse &&
           <Fragment>
-            <span className='mr-2'>Read less</span>
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
-            </svg>
+            Read less <i class="bi bi-chevron-up"></i>
           </Fragment>
         }
       </button>
@@ -39,13 +33,7 @@ const WorkItem = (props) => {
             <a className='btn btn-outline-main text-uppercase' href={props.link} 
               rel="noopener noreferrer" target='_blank'
             >
-              See it here
-              <svg width="1em" height="1em" viewBox="0 0 16 16" 
-                class="bi bi-chevron-right align-self-center" 
-                fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-              >
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-              </svg>
+              See it here <i class="bi bi-chevron-right"></i>
             </a>
           </span>
         }
@@ -53,7 +41,7 @@ const WorkItem = (props) => {
         >
           {props.tech.map((item, index) => {
             return (
-              <p  key={index} className='nav-link ml-0'>{item}</p>
+              <p  key={index} className='nav-link ms-0'>{item}</p>
             )
           })}
         </nav>

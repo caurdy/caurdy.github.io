@@ -12,6 +12,20 @@ const Work = () => {
         </div>
         <div className='row mt-5'>
           <WorkItem 
+            title={'Data Refresh Solution'}
+            subtitle={'Ally Financial, 2021'}
+            id={'DataRefresh'}
+            description={'Every data refresh breaks functionality in several tools used within the test automation team, and the loss of functionality has always been realized at critical times. There are a series of manual steps taken to restore functionality, but these steps took hours, and worst case, days to accomplish. I was tasked with finding a solution to this problem. I decided to automate these steps using a Jenkins job and scripts, which generate new data to fix the tools, adds the data into the tools\' codebase, and automatically create a pull request for the team to approve the automated changes. The automated process takes a minute at maximum.'}
+            tech={['Jenkins', 'Groovy', 'BASH', 'Python']}
+          />
+          <WorkItem 
+            title={'CSE 331 Coursework'}
+            subtitle={'MSU College of Engineering, 2021'}
+            id={'CSE331'}
+            description={'As an undergraduate learning assistant for CSE 331: Data Structures and Algorithms, I was tasked with creating homework assignments and projects for students to create a solution for. These projects\' difficulties needed to scale with the students\' learning and could not be too difficult. I created a handful of projects, most notable were an optimized hybrid sort using merge sort and insertion sort, using a trie to index and search for specific terms, and creating a graph implementation.'}
+            tech={['Python']}
+          />
+          <WorkItem 
             title={'MEI'}
             subtitle={'Gentex Corporation, 2020'}
             id={'MEI'}
@@ -22,7 +36,7 @@ const Work = () => {
             title={'MES Web'}
             subtitle={'Gentex Corporation, 2020'}
             id={'MESWeb'}
-            description={' An app used internally by Gentex to view and pull data from Industrial, Manufacturing, and Business happenings within the company. With this app, I was mostly tasked with fixing bugs, adding columns to tables, and adding inputs to forms. I have built a few forms where operators can issue or return items by a specific operation code they belong to.'}
+            description={'An app used internally by Gentex to view and pull data from Industrial, Manufacturing, and Business happenings within the company. With this app, I was mostly tasked with fixing bugs, adding columns to tables, and adding inputs to forms. I have built a few forms where operators can issue or return items by a specific operation code they belong to.'}
             tech={['C#', 'JavaScript', 'JQuery', 'CSS', 'Material-UI', 'SQL']}
           />
           <WorkItem 
@@ -62,13 +76,7 @@ const Work = () => {
             href='https://github.com/senguyen1011' rel="noopener noreferrer" 
             target='_blank'
           >
-            Personal Github
-            <svg width="1em" height="1em" viewBox="0 0 16 16" 
-              class="bi bi-chevron-right align-self-center" 
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-            >
-              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>
+            Personal Github <i class="bi bi-chevron-right"></i>
           </a>
         </span>
       </div>
