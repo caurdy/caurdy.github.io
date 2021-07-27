@@ -73,6 +73,7 @@ a:hover, .link-main:hover, a.nav-link:hover {
 }
 
 .btn-outline-main:hover {
+  color: #161614 !important;
   background-color: #ffdb03;
   border-color: #ffdb03;
   box-shadow: none;
