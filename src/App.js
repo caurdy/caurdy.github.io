@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Home from '.';
-import Intro from './Intro';
-import About from './About';
-import Work from './Work';
-import Contact from './Contact';
-import NavBar from './navbar';
-import toggleDarkMode from './darkMode';
+import Home from './portfolio';
+import About from './portfolio/About';
+import Work from './portfolio/Work';
+import Contact from './portfolio/Contact';
+import NavBar from './components/NavBar';
+import toggleDarkMode from './components/darkMode';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 export default class App extends Component {
@@ -19,9 +18,8 @@ export default class App extends Component {
               <Router>
                 <NavBar />
                 <Switch>
-                    {/*<Route path='.' component={Home} />*/}
-                    <Route path='/Intro' component={Intro} />
-                    <Route path='/portfolio/About' component={About} />
+                    <Route path='/' exact component={Home} />
+                    <Route path='/About' component={About} />
                     <Route path='/Work' component={Work} />
                     <Route path='/Contact' component={Contact} />
                 </Switch>

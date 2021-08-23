@@ -7,7 +7,7 @@ import {
   NavBtn,
 } from './NavbarElements';
 
-const Navbar = () => {
+const Index = () => {
   return (
     <>
       <Nav>
@@ -19,8 +19,8 @@ const Navbar = () => {
         </button>
         </NavBtn>
         <NavMenu>
-          <NavLink to='/Intro' activeStyle>
-            Intro
+          <NavLink to='/' activeStyle>
+            Home
           </NavLink>
           <NavLink to='/About' activeStyle>
             About
@@ -37,4 +37,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Index;

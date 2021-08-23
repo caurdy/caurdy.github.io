@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => {
+const Index = () => {
   return (
     <section className='container d-flex align-items-center'>
       <div className='w-100'>
@@ -12,4 +12,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Index;
