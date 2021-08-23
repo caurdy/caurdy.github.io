@@ -1,6 +1,6 @@
 {
-  "homepage": "http://caurdy.github.io/portfolio",
-  "name": "portfolio",
+  "homepage": "http://caurdy.github.io/",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
