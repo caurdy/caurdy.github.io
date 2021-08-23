@@ -6,74 +6,111 @@ const Work = () => {
     <section id='Work' className='container d-flex align-items-center'>
       <div className='w-100'>
         <h1 className='title title-accent display-5'>
-          Work & Projects
+          Work Experience & Projects
         </h1>
         <div className='row'>
         </div>
         <div className='row mt-5'>
           <WorkItem 
-            title={'Data Refresh Solution'}
-            subtitle={'Ally Financial, 2021'}
-            id={'DataRefresh'}
-            description={'Every data refresh breaks functionality in several tools used within the test automation team, and the loss of functionality has always been realized at critical times. There are a series of manual steps taken to restore functionality, but these steps took hours, and worst case, days to accomplish. I was tasked with finding a solution to this problem. I decided to automate these steps using a Jenkins job and scripts, which generate new data to fix the tools, adds the data into the tools\' codebase, and automatically create a pull request for the team to approve the automated changes. The automated process takes a minute at maximum.'}
-            tech={['Jenkins', 'Groovy', 'BASH', 'Python']}
+            title={'Customer Care Support Platform'}
+            subtitle={'Data Analytics Intern \n Supply Chain Analytics \n Mars Incorporated, Summer \'21'}
+            id={'Mars'}
+            description={'Problem: The Customer Care team within the German Market supply chain group were receiving thousands of emails per week. ' +
+            'The emails were generally from retailer or Mom&Pop customers concerning a variety of issues... availability, missing items, order confirmation, etc.' +
+            ' Due to the amount of traffic, it was impossible for the associates to answer the most important emails on time. ' +
+            'Thus, they came to our team (SCA) in order to find a solution which would cut down on time spent answering emails ' +
+            'and figuring out which needed responses first. \n\n Solution: I created a Dash app which allowed users to upload emails in bulk. ' +
+            'The application used an sklearn pipeline consisting of my own text cleansing function built specifically for emails, a TF-IDF vectorizer, ' +
+            'and an SGD Classifier model (w/ hinge loss) to classify the email into one of seven categories. From there the email would ' +
+            'be post-processed specifically for it\'s category. I.E. an email about availability would be scraped for item codes. The item ' +
+            'codes would be fed through specific databases hosted in various platforms (Azure Data lake, SAP, Power BI) where the stock information ' +
+            'about said item could be found. Then, the collected information was amalgamated and formatted into an email draft which the user could download and review ' +
+            'before sending out. In theory this solution, if fully implemented, could save associates over 500+ hours per week in answering emails. ' +
+            'This solution worked as a symbiotic tool so associate/customer behavior did not have to change while not invading privacy ' +
+            'of our associates inboxes. Additionally, it avoided a lot of unnecessary bureaucratic time sinks which would delay development in an already short window. '}
+            tech={['Python', 'NLP', 'Text Classification', 'Machine Learning', 'Dash', 'Data Science', 'Data Engineering']}
           />
           <WorkItem 
-            title={'CSE 331 Coursework'}
-            subtitle={'MSU College of Engineering, 2021'}
+            title={'CSE 331: Algorithms & Data Structures'}
+            subtitle={'Teaching Assistant - Project Co-Lead \n MSU College of Engineering, \'21-Present'}
             id={'CSE331'}
-            description={'As an undergraduate learning assistant for CSE 331: Data Structures and Algorithms, I was tasked with creating homework assignments and projects for students to create a solution for. These projects\' difficulties needed to scale with the students\' learning and could not be too difficult. I created a handful of projects, most notable were an optimized hybrid sort using merge sort and insertion sort, using a trie to index and search for specific terms, and creating a graph implementation.'}
-            tech={['Python']}
+            description={'CSE 331 is one the most vital courses for any MSU student pursuing a career involving programming. ' +
+            'Not only does this course teach fundamental DS/Algorithms but we also explain and enforce the concepts of time and space ' +
+            'complexity. As a team we setup coding challenges, projects and exams to guide the student along their journey where ' +
+            'we aim for them to be able to find optimal solutions, understanding when and when not to use a data structure, and' +
+            'what makes a great algorithm. ' +
+            '\n\nIn the role of a Project Co-lead, I have the responsibility of curating the projects in a way that makes ' +
+            'the implementation of the data structures and algorithms feel intuitive. Through the intuition and applications, ' +
+            'it\'s easier to explain the necessity of a data structure. Generally, each project revolves around ' +
+            'the implementation of one structure and an application of it. \n\nAs a Teaching Assistant, I host weekly helproom hours' +
+            'where I get to work one on one with students for two hours to explain concepts and get feedback about the course. So far' +
+            ' I\'ve created coding challenges around hash tables and path finding (BFS/DFS/Dijkstra). The class is in Python. '}
+            tech={['Python', 'Storytelling', 'Teaching', 'Communication', 'Team']}
           />
           <WorkItem 
-            title={'MEI'}
-            subtitle={'Gentex Corporation, 2020'}
-            id={'MEI'}
-            description={'Stands for Manufacturing Execution Interface. MEI is used by factory operators to track and process operations for jobs, which ultimately create parts. While my time at Gentex led me to add small features and fix bugs, my biggest contribution to MEI was the addition of the defect location tracker. Should a part be defective, operators can log and mark the defect on the part and scrap it. The defect locations are stored in their own database table, and can be pulled for reporting reasons.'}
-            tech={['TypeScript', 'Aurelia', 'CSS', 'Bootstrap', 'SQL']}
+            title={'Power Plant Live Data Visualization'}
+            subtitle={'I&C Engineering Intern \n Monroe Power Plant \n DTE Energy, Summer \'20'}
+            id={'MPP'}
+            description={'Problem: The unit engineers at the Monroe Power Plant hold daily meetings about the status of the plant. In each' +
+            'meeting they go through checks of various data about each unit to ensure everything is running normal. Checks about' +
+            'temperatures, pressures, flow rates and more for all the components in a unit. This data is collected through' +
+            'PLC software that isn\'t user friendly. The engineers needed a way to better track and analyze this data so ' +
+            'they didnt have to spend as much time going through it. \n\n Solution: With two other interns, we created a data ' +
+            'pipeline which extracted the information from the PLC side, cleansed, added and graphed it in Excel. Other plant ' +
+            'data was already being tracked and displayed using excel so it was the simplest and most user-friendly solution. '}
+            tech={['Excel', 'Data Engineering', 'Data Visualization', 'Team']}
           />
-          <WorkItem 
-            title={'MES Web'}
-            subtitle={'Gentex Corporation, 2020'}
-            id={'MESWeb'}
-            description={'An app used internally by Gentex to view and pull data from Industrial, Manufacturing, and Business happenings within the company. With this app, I was mostly tasked with fixing bugs, adding columns to tables, and adding inputs to forms. I have built a few forms where operators can issue or return items by a specific operation code they belong to.'}
-            tech={['C#', 'JavaScript', 'JQuery', 'CSS', 'Material-UI', 'SQL']}
+          <WorkItem
+            title={'Physical and Chemical Vapor Deposition Systems'}
+            subtitle={'Systems Engineering Intern \n Fraunhofer USA CCD, \'18-\'20'}
+            id={'Fraunhofer'}
+            description={'During my tenure at Fraunhofer, I worked on almost every system in the building. My main system ' +
+            'was known as DS10 (short for Diamond System 10), which was the newest generation of diamond system there and a ' +
+            'microwave plasma-assisted CVD machine.'+
+            ' My contributions consisted of mechanical, electrical and software development on it. Since I\'m now a computer' +
+            ' science student I speak mainly of the latter part of my contributions. However, I spent an excessive amount of time' +
+            ' working on that machine and could speak on any of those aspects of it for an equally excessive amount of time. ' +
+            'Unfortunately, I left before the machine ever reached production status. However, we were able to achieve plasma ' +
+            'and have several thin film growth trials which resulted in polycrystalline growth which was cool to see. ' +
+            '\n\n This project shaped a lot of who I am as an engineer, a developer and probably as a person. My former bosses, ' +
+            ' Jan and Brandon taught me about the fundamental principles of safety, creativity, work ethic, continuous learning, and more ' +
+            ' that are required of you to be a great engineer. I owe a great deal to them and cannot thank them enough for their ' +
+            'guidance and patience with my growth from a stupid freshman to a slightly less stupid junior. There isn\'t enough room' +
+            ' nor enough energy in my body to type everything I learned, accomplished, broke, fixed, discovered in that lab nor enough words to' +
+            ' convey everything I found out about life from all those I worked with there. Maybe one day someone will clean up the mezzanine.' +
+            ' '}
+            tech={['TwinCAT', 'LabVIEW', 'Visual Studio', 'Engineering', 'Safety', 'Project Management', 'Documentation', 'Life']}
           />
-          <WorkItem 
-            title={'MSU Sports Camps'}
-            subtitle={'MSU RHS IS, 2020'}
-            id={'SportsCamps'}
-            description={'A website where people can view and sign up for Michigan State sport camps that are open for sign up during the summer, bringing in near a million dollars in revenue for sport camps each year. On the backend, admins and coaches can edit season information, edit camps, and manually process camp orders. My project was to help revamp the frontend to create a more appealing and comfortable user experience. On the backend, I added a few new features, such as coaches can add documents and forms for people to download, admins can update notices, and updated report exports for people who\'ve signed up for camps.'}
-            tech={['PHP', 'JavaScript', 'JQuery', 'CSS', 'PostgreSQL']}
-            link='https://www.sportcamps.msu.edu/'
+          <WorkItem
+            title={'Balloons Tower Defense Remake'}
+            subtitle={'Student \n CSE 335: OOP Software Development'}
+            id={'CSE335'}
+            description={'For one of the two projects of the class, we were tasked with recreating the popular mobile game ' +
+            'Balloon Towers Defense from near scratch. \n https://ninjakiwi.com/Games/Tower-Defense/Bloons-Tower-Defense-5.html \n ' +
+            'With a team of four other students, over the course of a month, we recreated the game functionally including our own ' +
+            'unique level, four unique towers, and two types of balloons. The game also included a scoring system. In doing so ' +
+            'we received a group grade of 100%, and I received an individual grade of 100%. We used agile' +
+            ' development techniques such as stand-ups, scrums, iterative development, etc. through the Trello platform. The ' +
+            'game was written in C++ and utilized an object oriented modeling approach. Thus, we often drew out UML diagrams for our ' +
+            'game using paradigm to understand how our classes would be setup and interact before writing code. '}
+            tech={['C++', 'Agile', 'Team', 'Object-Oriented Modeling', 'Software development', 'Trello', 'UML', 'Paradigm']}
           />
-          <WorkItem 
-            title={'Service Portal'}
-            subtitle={'MSU RHS IS, 2018'}
-            id={'ServicePortal'}
-            description={'A webapp where service desk workers at MSU\'s residential halls can log and track relevant information for residents. It is used in every hall on campus. Most notably incoming packages are dropped off at the service desk, where they will be logged and Service Portal will notify residents through email that their package has arrived. Residents may also borrow items, such as keys and access cards, from the desk, which the app will also track and notify residents if their item is overdue for return. My contributions were implementing and maintaining the package and item loan features. Also as the lead student developer, I oversaw and reviewed features such as resident lookup and tracking.'}
-            tech={['PHP', 'JavaScript', 'JQuery', 'CSS', 'Bootstrap', 'PostgreSQL']}
-          />
-          <WorkItem 
-            title={'Monies'}
-            subtitle={'Personal, 2020'}
-            id={'Monies'}
-            description={'A webapp where users can put in categorized, monthly expenses and estimated incomes and calculate the amount of money they have leftover each month to budget out. Users may see a percentage breakdown of their expenses, and set a goal amount to save towards, which will then return how long it\'ll take to save that goal. Users can also add their own custom expenses. A fun project where I tried to teach myself React Hooks while create a potentially useful app.'}
-            tech={['JavaScript', 'React', 'CSS', 'Bootstrap']}
-            link='https://senguyen1011.github.io/monies/'
-          />
-          <WorkItem 
-            title={'MechKeys'}
-            subtitle={'Personal, 2020'}
-            id={'MechKeys'}
-            description={'A webapp where users can search and view mechanical keyboards. Keyboards can be searched for by name and form factor. More keyboards are planned to be added, as well as a page for searching for keyboard switches. A small proof-of-concept project to learn Angular, create services, and use API calls.'}
-            tech={['JavaScript', 'Angular', 'CSS', 'Bootstrap']}
-            link='https://senguyen1011.github.io/mechkeys/mech'
+          <WorkItem
+            title={'Discord Chat Bot'}
+            subtitle={'Personal Project'}
+            id={'Discord'}
+            description={'I created a discord chat bot first in javascript, then in python because I liked the python api better. ' +
+            'The bot is command and event triggered. It will scrape messages for key words which trigger responses. Additionally, ' +
+            'anyone in the chat can append to its vocabulary such that you can tell the bot what you want it to say when a certain word ' +
+            'is said in chat. On user entrance events into a voice channel, it will play an audio clip depending on the user. ' +
+            'It has other commands such as chat cleansing (deleting messages fitting a criteria from a text channel) and playing ' +
+            'audio clips on command. I have future plans for extending its capabilities.'}
+            tech={['JavaScript', 'Python', 'Fun']}
           />
         </div>
         <span className='d-flex'>
           <a className='btn btn-outline-main text-uppercase' 
-            href='https://github.com/senguyen1011' rel="noopener noreferrer" 
+            href='https://github.com/caurdy/' rel="noopener noreferrer"
             target='_blank'
           >
             Personal Github <i class="bi bi-chevron-right"></i>

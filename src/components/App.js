@@ -1,10 +1,13 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import Home from '.';
 import Intro from './Intro';
 import About from './About';
 import Work from './Work';
 import Contact from './Contact';
+import NavBar from './navbar';
 import toggleDarkMode from './darkMode';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 export default class App extends Component {
   componentDidMount() {
@@ -13,17 +16,16 @@ export default class App extends Component {
   
   render() {
     return (
-      <Fragment>
-        <button className='btn btn-toggle' type='button' 
-          title='Toggle Dark Mode'
-        >
-          <i class="bi bi-brightness-high-fill"></i>
-        </button>
-        <Intro />
-        <About />
-        <Work />
-        <Contact />
-      </Fragment> 
+              <Router>
+                <NavBar />
+                <Switch>
+                    <Route path='' exact component={Home} />
+                    <Route path='/Intro' component={Intro} />
+                    <Route path='/About' component={About} />
+                    <Route path='/Work' component={Work} />
+                    <Route path='/Contact' component={Contact} />
+                </Switch>
+              </Router>
     );
   }
 }

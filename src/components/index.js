@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Intro = () => {
+const Home = () => {
   return (
     <section className='container d-flex align-items-center'>
       <div className='w-100'>
@@ -12,4 +12,4 @@ const Intro = () => {
   );
 }
 
-export default Intro;
+export default Home;

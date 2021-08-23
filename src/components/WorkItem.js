@@ -4,7 +4,7 @@ const WorkItem = (props) => {
   const [collapse, setCollapse] = useState(true);
 
   return (
-    <div className='col-4 mb-5'>
+    <div className='col-6 mb-5'>
       <h3 className='title'>{props.title}</h3>
       <h5 className='subtitle'>{props.subtitle}</h5>
       <button className='btn btn-main py-1 px-2' type='button' data-toggle='collapse' 
