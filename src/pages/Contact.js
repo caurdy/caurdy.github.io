@@ -9,7 +9,7 @@ const Contact = () => {
           <span className='title-accent'>Contact Me</span>
         </h1>
         <h4 className='subtitle'>
-          Interested in any full-time roles utilizing ML/AI technology
+          Take care and have a good one!
         </h4>
         <div className='row text-uppercase mt-5 pt-5'>
           <div className='col'>

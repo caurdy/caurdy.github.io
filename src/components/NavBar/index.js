@@ -6,12 +6,13 @@ import {
   NavMenu,
   NavBtn,
 } from './NavbarElements';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Index = () => {
   return (
     <>
       <Nav>
-        <Bars />
+        <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
         <NavBtn>
         <button className='btn btn-toggle' type='button'
                 title='Toggle Dark Mode'>
@@ -19,16 +20,16 @@ const Index = () => {
         </button>
         </NavBtn>
         <NavMenu>
-          <NavLink to='/' activeStyle>
+          <NavLink to='/Home' activeStyle>
             Home
           </NavLink>
-          <NavLink to='/About' activeStyle>
+          <NavLink to='/about' activeStyle>
             About
           </NavLink>
-          <NavLink to='/Work' activeStyle>
+          <NavLink to='/work' activeStyle>
             Work & Projects
           </NavLink>
-          <NavLink to='/Contact' activeStyle>
+          <NavLink to='/contact' activeStyle>
             Contact
           </NavLink>
         </NavMenu>

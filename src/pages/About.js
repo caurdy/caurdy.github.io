@@ -8,34 +8,34 @@ const About = () => {
         <div className='row'>
           <div className='col-4 text-second'>
             <h4 className='title d-flex align-items-center'>
-              <i class="bi bi-code-square me-2"></i>
+              <i class="bi bi-code-square me-2"/>
               Languages
             </h4>
             <ul>
               <li>Python</li>
               <li>C++</li>
-              <li>MATLAB</li>
               <li>SQL</li>
               <li>HTML</li>
               <li>CSS (Bootstrap)</li>
               <li>JavaScript (React)</li>
-              <li>Spanish (Sorta)</li>
+              <li>Spanish (un poco)</li>
             </ul>
 
             <h4 className='title d-flex align-items-center'>
-              <i class="bi bi-clipboard-data me-2"></i>
+              <i class="bi bi-clipboard-data me-2"/>
               Python Data Analytics
             </h4>
             <ul>
               <li>Preprocessing (Pandas, NLTK, Spacy)</li>
               <li>Modeling (Keras, Sklearn, PyTorch)</li>
               <li>Visualization (Matplotlib, Dash)</li>
-              <li>NLP (Transformers/BERT, Text classification)</li>
+              <li>NLP (BERT, Text Classification)</li>
+              <li>Automatic Speech Recognition</li>
             </ul>
 
             <h4 className='title d-flex align-items-center'>
-              <i class="bi bi-terminal me-2"></i>
-              Technologies, Skills, Etc.
+              <i class="bi bi-terminal me-2"/>
+              Technologies & Skills
             </h4>
             <ul>
               <li>Azure DevOps</li>
@@ -53,12 +53,13 @@ const About = () => {
               Hey, I'm Jacob
             </h1>
             <p>
-              Currently I'm a senior <a href="https://cse.msu.edu/About/">Computer Science Engineering</a> major with
-              a minor in <a href="https://cogsci.msu.edu/">Cognitive Science</a> at Michigan State.
+              Currently I'm an MSU Graduate who studied <a href="https://cse.msu.edu/About/">Computer Science Engineering</a>
+               with a minor in <a href="https://cogsci.msu.edu/">Cognitive Science</a> at Michigan State. I currently reside
+              as a Data Scientist at Mars Inc.
               My first experience with programming was using Dev-C++ in high school. It enjoyed it but I decided to go with
               Mechanical Engineering as my initial major, with a minor in CSE. I enjoyed CADD and thought ME would suit me.
               However, once I got into the junior-level courses at MSU I realized how boring ME really was.
-              Thus, I switched my major to CSE, dropped ME, and picked up my new minor. The switch re-ignited my
+              Thus, I switched my major to CSE, and picked CogSci as my new minor. The switch re-ignited my
               passion for programming and I haven't looked back since. Additionally, it let me explore the emerging field
               of cognitive science which had peaked my interest for awhile.
             </p>
@@ -81,11 +82,11 @@ const About = () => {
               What's the simplest way to achieve the end goal? How can I break down this project into digestible pieces?
               How will this project's capabilities be extended and supported throughout it's lifetime and what's the
               optimal way to write it so long-term support is viable? I attempt hold these questions in mind when exploring
-              a new project. You can explore my previous projects and work experience below.
+              a new project. You can explore my previous projects and work experience in the <a href="/Work"> Work & Experiences </a> page.
             </p>
             <p>
               In my free-time I enjoy playing rugby, video games, reading and working out. Additionally,
-              I am the Vice President of the <a href="https://www.michiganstaterugby.com/"> Men's Rugby Club </a>
+              I am the former Vice President of the <a href="https://www.michiganstaterugby.com/"> Men's Rugby Club </a>
               at MSU where I've met many great friends and have made even more memories. I appreciate you taking the time
               to get to know me, have a good one, Jacob.
             </p>
@@ -101,6 +102,6 @@ const About = () => {
       </div>
     </section>
   );
-}
+};
 
 export default About;
