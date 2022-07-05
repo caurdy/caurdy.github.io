@@ -8,8 +8,14 @@ const Work = () => {
         <h1 className='title title-accent display-5'>
           Work Experience & Projects
         </h1>
-        <div className='row'>
-        </div>
+        <span className='d-flex'>
+          <a className='btn btn-outline-main text-uppercase'
+             href='https://github.com/caurdy/' rel="noopener noreferrer"
+             target='_blank'
+          >
+            Personal Github <i className="bi bi-chevron-right"></i>
+          </a>
+        </span>
         <div className='row mt-5'>
           <WorkItem 
             title={'Customer Care Support Platform'}
@@ -34,7 +40,7 @@ const Work = () => {
             title={'CSE 331: Algorithms & Data Structures'}
             subtitle={'Teaching Assistant - Project Co-Lead \n MSU College of Engineering, \'21-Present'}
             id={'CSE331'}
-            description={'CSE 331 is one the most vital courses for any MSU student pursuing a career involving programming. ' +
+            description={'CSE 331 is one of the most vital courses for any MSU student pursuing a career involving programming. ' +
             'Not only does this course teach fundamental DS/Algorithms but we also explain and enforce the concepts of time and space ' +
             'complexity. As a team we setup coding challenges, projects and exams to guide the student along their journey where ' +
             'we aim for them to be able to find optimal solutions, understanding when and when not to use a data structure, and' +
@@ -42,8 +48,8 @@ const Work = () => {
             '\n\nIn the role of a Project Co-lead, I have the responsibility of curating the projects in a way that makes ' +
             'the implementation of the data structures and algorithms feel intuitive. Through the intuition and applications, ' +
             'it\'s easier to explain the necessity of a data structure. Generally, each project revolves around ' +
-            'the implementation of one structure and an application of it. \n\nAs a Teaching Assistant, I host weekly helproom hours' +
-            'where I get to work one on one with students for two hours to explain concepts and get feedback about the course. So far' +
+            'the implementation of one structure and an application of it. \n\nAs a Teaching Assistant, I host weekly helprooms ' +
+            'where I get to work one on one and in groups with students for two hours to explain concepts and get feedback about the course. So far' +
             ' I\'ve created coding challenges around hash tables and path finding (BFS/DFS/Dijkstra). The class is in Python. '}
             tech={['Python', 'Storytelling', 'Teaching', 'Communication', 'Team']}
           />
@@ -108,14 +114,6 @@ const Work = () => {
             tech={['JavaScript', 'Python', 'Fun']}
           />
         </div>
-        <span className='d-flex'>
-          <a className='btn btn-outline-main text-uppercase' 
-            href='https://github.com/caurdy/' rel="noopener noreferrer"
-            target='_blank'
-          >
-            Personal Github <i class="bi bi-chevron-right"></i>
-          </a>
-        </span>
       </div>
     </section>
   );

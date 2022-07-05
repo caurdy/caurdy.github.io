@@ -6,17 +6,16 @@ import {
   NavMenu,
   NavBtn,
 } from './NavbarElements';
-import Sidebar from '../Sidebar/Sidebar';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 const Index = () => {
   return (
     <>
       <Nav>
-        <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
         <NavBtn>
         <button className='btn btn-toggle' type='button'
                 title='Toggle Dark Mode'>
-          <i className="bi bi-brightness-high-fill"></i>
+          <i className="bi bi-brightness-high-fill"/>
         </button>
         </NavBtn>
         <NavMenu>

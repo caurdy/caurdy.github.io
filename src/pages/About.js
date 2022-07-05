@@ -1,63 +1,22 @@
 import React from 'react';
 import Resume from '../components/assets/Resume.pdf';
 
+
 const About = () => {
   return (
     <section id='About' className='container d-flex align-items-center'>
       <div className='w-100'>
         <div className='row'>
-          <div className='col-4 text-second'>
-            <h4 className='title d-flex align-items-center'>
-              <i class="bi bi-code-square me-2"/>
-              Languages
-            </h4>
-            <ul>
-              <li>Python</li>
-              <li>C++</li>
-              <li>SQL</li>
-              <li>HTML</li>
-              <li>CSS (Bootstrap)</li>
-              <li>JavaScript (React)</li>
-              <li>Spanish (un poco)</li>
-            </ul>
-
-            <h4 className='title d-flex align-items-center'>
-              <i class="bi bi-clipboard-data me-2"/>
-              Python Data Analytics
-            </h4>
-            <ul>
-              <li>Preprocessing (Pandas, NLTK, Spacy)</li>
-              <li>Modeling (Keras, Sklearn, PyTorch)</li>
-              <li>Visualization (Matplotlib, Dash)</li>
-              <li>NLP (BERT, Text Classification)</li>
-              <li>Automatic Speech Recognition</li>
-            </ul>
-
-            <h4 className='title d-flex align-items-center'>
-              <i class="bi bi-terminal me-2"/>
-              Technologies & Skills
-            </h4>
-            <ul>
-              <li>Azure DevOps</li>
-              <li>Azure Machine Learning</li>
-              <li>Agile</li>
-              <li>Git</li>
-              <li>GDB</li>
-              <li>Linux</li>
-              <li>CLI/Bash</li>
-            </ul>
-          </div>
-        
-          <div className='col-8'>
+          <div className='col-sm-8'>
             <h1 className='title title-accent display-5'>
               Hey, I'm Jacob
             </h1>
             <p>
-              Currently I'm an MSU Graduate who studied <a href="https://cse.msu.edu/About/">Computer Science Engineering</a>
-               with a minor in <a href="https://cogsci.msu.edu/">Cognitive Science</a> at Michigan State. I currently reside
+              I'm a Michigan State University graduate who studied <a href="https://cse.msu.edu/About/">Computer Science Engineering </a>
+              with a minor in <a href="https://cogsci.msu.edu/">Cognitive Science </a>. I currently reside
               as a Data Scientist at Mars Inc.
               My first experience with programming was using Dev-C++ in high school. It enjoyed it but I decided to go with
-              Mechanical Engineering as my initial major, with a minor in CSE. I enjoyed CADD and thought ME would suit me.
+              Mechanical Engineering (ME) as my initial major, with a minor in CSE. I enjoyed CADD and thought ME would suit me.
               However, once I got into the junior-level courses at MSU I realized how boring ME really was.
               Thus, I switched my major to CSE, and picked CogSci as my new minor. The switch re-ignited my
               passion for programming and I haven't looked back since. Additionally, it let me explore the emerging field
@@ -98,6 +57,47 @@ const About = () => {
               </a>
             </span>
           </div>
+          <div className='col-sm-4 text-second'>
+          <h4 className='title d-flex align-items-center'>
+            <i className="bi bi-code-square me-2"/>
+            Languages
+          </h4>
+          <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS (Bootstrap)</li>
+            <li>JavaScript (React)</li>
+            <li>Spanish (un poco)</li>
+          </ul>
+
+          <h4 className='title d-flex align-items-center'>
+            <i className="bi bi-clipboard-data me-2"/>
+            Data Science
+          </h4>
+          <ul>
+            <li>Preprocessing (Pandas, NLTK, Spacy)</li>
+            <li>Modeling (Keras, Sklearn, PyTorch)</li>
+            <li>Visualization (Matplotlib, Dash)</li>
+            <li>NLP (BERT, Text Classification)</li>
+            <li>Automatic Speech Recognition</li>
+          </ul>
+
+          <h4 className='title d-flex align-items-center'>
+            <i className="bi bi-terminal me-2"/>
+            Technologies & Skills
+          </h4>
+          <ul>
+            <li>Azure DevOps</li>
+            <li>Azure Machine Learning</li>
+            <li>Agile</li>
+            <li>Git</li>
+            <li>GDB</li>
+            <li>Linux</li>
+            <li>CLI/Bash</li>
+          </ul>
+        </div>
         </div>
       </div>
     </section>
